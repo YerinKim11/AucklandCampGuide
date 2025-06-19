@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aucklander's Camping Guide</title>
+  <link rel="stylesheet" href="CSS/Index.css">
+  <!--CDN links for Bootstrap5-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
+  <!-- CDN links for Bootstrap JavaScript -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</head>
+
+<body>
+  <header>
+    <!--Add company logo here with Bootstrap-->
+    <div class="container">
+      <img src="image/logo.JPG" alt="Site Logo" class="img-thumbnail" width="90" height="40">
+      <nav id="menu"></nav> <!-- menu.html re-use of repeating code eg menus, headers-use of appropriate elements -->
+    </div>
+  </header>
+
+  <!-- Add a hero image and text with Bootstrap-->
+  <section class="container border border-5 p-3 text-center">
+    <!--Add Canvas animation in hero section-->
+    <canvas id="heroCanvas" width="600" height="200" style="border: 2px solid lightgray;"></canvas>
+    <br>
+    <!-- Title text -->
+    <h1 class="nature-text">Aucklander's Camping Guide</h1>
+    <h4 class="display-6">
+      The Ultimate Guidebook for Aucklanders Wanting to Start Camping.
+      Location Recommendations, Gear Reviews, and Safety Tips All in One!
+    </h4>
+  </section>
+  <!--Hot Topic Section-->
+  <section class="hot-topics">
+    <h2>HOT TOPICS</h2>
+    <div class="topic-cards">
+      <!--Topic1-->
+      <div class="card">
+        <img src="image/HotTopic1.png" alt="Hot Topic Image">
+        <p>Auckland Top 5 Camping Spot</p>
+        <a href="BestCampingSpot.html" class="button" target="_self">LEARN MORE</a>
+      </div>
+      <!--Topic2-->
+      <div class="card">
+        <img src="image/HotTopic2.png" alt="Hot Topic Image">
+        <p>Camping Equipment Checklist</p>
+        <a href="CampingGuide.html" class="button" target="_self">LEARN MORE</a>
+      </div>
+      <!--Topic3-->
+      <div class="card">
+        <img src="image/HotTopic3.png" alt="Hot Topic Image">
+        <p>Safety Quiz<br><br></p>
+        <a href="SafetyTip.html" class="button" target="_self">LEARN MORE</a>
+      </div>
+    </div>
+  </section>
+  <section class="feedback">
+    <img src="image/Feedback.png" alt="Feedback Icon">
+    <h2 class="text-success">WE'D LOVE YOUR FEEDBACK!</h2>
+    <p>Is there any information you were looking for but couldn't find on our website?<br>
+      Let us know — we're here to improve your camping experience in Auckland.</p>
+    <a href="Contact.html" class="feedback-button">SEND US A MESSAGE!</a>
+  </section>
+  <hr>
+  <div id="myfooter"></div> <!-- menu.html re-use of repeating code eg footer, headers-use of appropriate elements -->
+  <div style = "background-color: #f1f1f1; font-size: 0.9em; color: #555;  text-align: center;"  >
+    <p>
+      Pixabay. (n.d.). Icon location map pin position [Illustration]. Pixabay.
+      https://pixabay.com/illustrations/icon-location-map-pin-position-8806316/<br>
+      Pixabay. (n.d.). Tent barbecue camp camping grill [Illustration]. Pixabay.
+      https://pixabay.com/illustrations/tent-barbecue-camp-camping-grill-5625268/<br>
+      Pixabay. (n.d.). Feedback report back balloons [Illustration]. Pixabay.
+      https://pixabay.com/illustrations/feedback-report-back-balloons-4746811/<br>
+      Pixabay. (n.d.). Quiz exam icon button test [Vector image]. Pixabay.
+      https://pixabay.com/vectors/quiz-exam-icon-button-test-3644414/
+    </p>
+  </div>
+
+  <script>
+    //Here is Javascript code for Canvas Animation.
+    const canvas = document.getElementById("heroCanvas");
+    const ctx = canvas.getContext("2d");
+
+    let x = canvas.width;
+    const y = 150;
+
+    function drawMountainTentShape(x) {
+      // ============ MOUNTAIN =============
+      ctx.beginPath(); // mountain base triangle
+      ctx.moveTo(x + 50, y); // bottom-left
+      ctx.lineTo(x + 150, 80); // peak
+      ctx.lineTo(x + 250, y);  // bottom-right
+      ctx.closePath();
+      ctx.fillStyle = "#6B8E23"; // mountain green
+      ctx.fill();
+      ctx.stroke();
+
+      // ============ TENT =============
+      ctx.beginPath(); // tent triangle
+      ctx.moveTo(x + 160, y); // bottom-left
+      ctx.lineTo(x + 185, 120); // top
+      ctx.lineTo(x + 210, y); // bottom-right
+      ctx.closePath();
+      ctx.fillStyle = "#D2691E"; // tent color
+      ctx.fill();
+      ctx.stroke();
+
+      // Tent entrance (middle line)
+      ctx.beginPath();
+      ctx.moveTo(x + 185, 120); // tent top
+      ctx.lineTo(x + 185, y);  // tent bottom
+      ctx.strokeStyle = "#8B4513";
+      ctx.stroke();
+
+      // ============ SUN =============
+      ctx.beginPath();
+      ctx.arc(x + 280, 60, 15, 0, 2 * Math.PI); // small sun
+      ctx.fillStyle = "gold";
+      ctx.fill();
+    }
+
+    function animate() {
+      ctx.clearRect(0, 0, canvas.width, canvas.height); // reset previous pho
+      drawMountainTentShape(x);
+      x -= 2;
+      // Reset if off screen
+      if (x < -300) {
+        x = canvas.width;
+      }
+      requestAnimationFrame(animate);
+    }
+
+    animate();
+  </script>
+
+  <!-- Menu and footer script -->
+  <script src="JavaScript/menuScript.js"></script>
+  <script src="JavaScript/footerScript.js"></script>
+
+</body>
+
+</html>

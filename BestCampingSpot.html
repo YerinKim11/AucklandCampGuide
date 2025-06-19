@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Auckland Top5 Best Camping Spot</title>
+     <link rel="stylesheet" href="CSS/BestCampingSpot.CSS">
+     <!--CDN links for Bootstrap5-->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
+     <!-- CDN links for Bootstrap JavaScript -->
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+     <!--J Query link -->
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+
+<body>
+     <header>
+          <!--Add company logo here with Bootstrap-->
+          <div class="container">
+               <img src="image/logo.JPG" alt="Site Logo" class="img-thumbnail" width="90" height="40">
+               <!-- menu.html re-use of repeating code eg menus, headers-use of appropriate elements -->
+               <nav id="menu"></nav>
+     </header>
+     <hr>
+     <!--main title section-->
+     <section class="main-title">
+          <!--we3School-->
+          <!--Here is where the object-fit property comes in. The object-fit property can take one of the following values:-->
+          <!--cover - The image keeps its aspect ratio and fills the given dimension. The image will be clipped to fit-->
+          <img src="image/ChatGPTSpot.png" alt="Beginner Camper Banner" class="img-fluid rounded"
+               style="max-height: 600px; object-fit: cover; width: 100%;">
+          <h1 class=nature-text>Auckland's Best Camping Spot</h1>
+          <div class="sub-title">Looking for a hidden gem camping spot in Auckland?<br>
+               This page introduces affordable campsites where you can truly experience the beauty of Auckland's nature.
+          </div>
+     </section>
+     <br>
+     <!--Create Grid by bootstrap to increase responsibility-->
+     <div class="container">
+          <!--Spot 1-->
+          <div class="row">
+               <!--medium device: dividing with 2 unequal columns //  small device: takes whole row -->
+               <div class="col-sm-12 col-md-4"><img src="image/ambury.jpg" alt="Spot 1" class="img-fluid"
+                         style="width: 500px; height: 320px; object-fit: cover;"></div>
+               <div class="col-sm-12 col-md-8 border border-1">
+                    <h3 style="color: green;"><strong>Top 1</strong> Ambury campground at Ambury Regional Park </h3>
+                    <br>
+                    <p><strong>LOCATION :</strong> 66 Wellesley Road, Māngere Bridge, Auckland</p>
+                    <p><strong>PRICE :</strong>Adult: $17.50 (GST inclusive) // Child: $7.00 (GST inclusive)</p>
+                    <p><strong>LINK :</strong> <a
+                              href="https://www.aucklandcouncil.govt.nz/parks-recreation/stay-at-park/Pages/accommodation-details.aspx?itemID=1"
+                              target="_blank">VISIT NOW</a></p>
+                    <h4 class="display=5"><strong>WHY TOP 1?</strong></h4>
+                    <!--JQuery: make display hide-->
+                    <button id="btn1" class="btn btn-outline-success">Read more</button>
+                    <p id="text1" style="display: none;">
+                         Ambury Park is a great choice for campers who want to
+                         stay close to nature without going too far
+                         from the city.
+                         It’s affordable, family-friendly, and set in a peaceful farm-like environment with walking
+                         tracks and friendly animals.
+                         The site has council-managed toilets, proper shower facilities, and BBQ areas, making it super
+                         convenient for a comfortable and relaxing weekend escape.
+                    </p>
+
+
+               </div>
+          </div>
+          <br><br>
+          <!--Spot2-->
+          <div class="row">
+               <!--medium device: dividing with 2 unequal columns //  small device: takes whole row -->
+               <!--max-width:Set the maximum width of a <img> element. from w3school : https://www.w3schools.com/cssref/pr_dim_max-width.php -->
+               <div class="col-sm-12 col-md-4"><img src="image/beachfront.jpg" alt="Spot 2" class="img-fluid"
+                         style="width: 500px; height: 320px; object-fit: cover;"></div>
+               <div class="col-sm-12 col-md-8 border border-1">
+                    <h3 style="color: green;"><strong>Top 2</strong> Beachfornt Campground</h3>
+                    <br>
+                    <p><strong>LOCATION :</strong>95 Deerys Road, Orere Point, Auckland</p>
+                    <p><strong>PRICE :</strong>Adult: $17.50 (GST inclusive) // Child: $7.00</p>
+                    <p><strong>LINK :</strong><a
+                              href="https://www.aucklandcouncil.govt.nz/parks-recreation/stay-at-park/Pages/accommodation-details.aspx?itemID=69"
+                              target="_blank">VISIT NOW</a></p>
+                    <h4 class="display=5"><strong>WHY TOP 2?</strong></h4>
+                    <!--JQuery: make display hide-->
+                    <button id="btn2" class="btn btn-outline-success">Read more</button>
+                    <p id="text2" style="display: none;">
+                         Beachfront Campground is perfect for campers looking for a
+                         quiet, scenic getaway right by the
+                         water.
+                         You’ll wake up to ocean views and enjoy direct beach access, which makes it great for swimming,
+                         kayaking, or just relaxing
+                         by the shore. While it’s a bit of a drive from the city, the peaceful coastal vibe totally
+                         makes up for it.
+                    </p>
+               </div>
+          </div>
+          <br><br>
+          <!--Spot3-->
+          <div class="row">
+               <!--medium device: dividing with 2 unequal columns //  small device: takes whole row -->
+               <div class="col-sm-12 col-md-4"><img src="image/blackberry.jpg" alt="Spot 3" class="img-fluid"
+                         style="width: 500px; height: 320px; object-fit: cover;"></div>
+               <div class="col-sm-12 col-md-8 border border-1">
+                    <h3 style="color: green;"><strong>Top 3</strong> Blackberry Flats campground at Waharau Regional
+                         Park</h3>
+                    <br>
+                    <p><strong>LOCATION :</strong>1748 East Coast Road, Whakatiwai</p>
+                    <p><strong>PRICE :</strong>Adult: $17.50 (GST inclusive) // Child: $7.00</p>
+                    <p><strong>LINK :</strong><a
+                              href="https://www.aucklandcouncil.govt.nz/parks-recreation/stay-at-park/Pages/accommodation-details.aspx?itemID=84"
+                              target="_blank">VISIT NOW</a></p>
+                    <h4 class="display=5"><strong>WHY TOP 3?</strong></h4>
+                    <!--JQuery: make display hide-->
+                    <button id="btn3" class="btn btn-outline-success">Read more</button>
+                    <p id="text3" style="display: none;">
+                         Blackberry Campground is not far from the Beachfront
+                         Campground. Instead of the ocean,
+                         it offers a forest camping experience, with a stream running nearby where you can enjoy water
+                         activities.
+                         As one of Auckland’s hidden camping spots, it’s perfect for those who prefer a quiet and
+                         peaceful atmosphere.
+                         Falling asleep to the sound of flowing water makes for a truly magical camping experience.
+                         However, due to its remote location and the difficulty in finding the way, I’ve ranked it
+                         third.
+                    </p>
+               </div>
+          </div>
+          <br><br>
+
+          <!--Spot4-->
+          <div class="row">
+               <!--medium device: dividing with 2 unequal columns //  small device: takes whole row -->
+               <div class="col-sm-12 col-md-4"><img src="image/barn.jpg" alt="Spot 4" class="img-fluid"
+                         style="width: 500px; height: 320px; object-fit: cover;"></div>
+               <div class="col-sm-12 col-md-8 border border-1">
+                    <h3 style="color: green;"><strong>Top 4</strong> Barn Paddock campground at Huia, Waitākere Ranges
+                         Regional Park</h3>
+                    <p><strong>LOCATION :</strong> Huia Road, Huia</p>
+                    <p><strong>PRICE :</strong> Adult: $10.00 (GST inclusive) // Child: $4.50</p>
+                    <p><strong>LINK :</strong><a
+                              href="https://www.aucklandcouncil.govt.nz/parks-recreation/stay-at-park/Pages/accommodation-details.aspx?itemID=25"
+                              target="_blank">VISIT NOW</a></p>
+                    <h4 class="display=5"><strong>WHY TOP 4?</strong> </h4>
+                    <!--JQuery: make display hide-->
+                    <button id="btn4" class="btn btn-outline-success">Read more</button>
+                    <p id="text4" style="display: none;">
+                         The Van Pedok Campground is located in the western Hunua
+                         region of Auckland and is known for its
+                         exceptionally affordable rates compared to other sites.
+                         One of its key advantages is its relatively close distance to Auckland city. Nearby, you'll
+                         find cattle farms,
+                         as well as chicken and pig farms, offering visitors a valuable opportunity to connect with
+                         nature and interact with various
+                         animals during their stay. However, due to the relatively poor and outdated condition of its
+                         bathroom and kitchen facilities,
+                         it has been rated 4 out of 5.
+                    </p>
+               </div>
+          </div>
+          <br><br>
+          <!--Spot5-->
+          <div class="row">
+               <!--medium device: dividing with 2 unequal columns //  small device: takes whole row -->
+               <div class="col-sm-12 col-md-4"><img src="image/upper.jpg" alt="Spot 5" class="img-fluid"
+                         style="width: 500px; height: 320px; object-fit: cover;"></div>
+               <div class="col-sm-12 col-md-8 border border-1">
+                    <h3 style="color: green;"><strong>Top 5</strong> Upper Mangatāwhiri campground at Hunua Ranges
+                         Regional Park</h3>
+                    <br>
+                    <p><strong>LOCATION :</strong> Falls Road, Hunua</p>
+                    <p><strong>PRICE :</strong> Adult: $10.00 (GST inclusive) // Child: $4.50</p>
+                    <p><strong>LINK :</strong><a
+                              href="https://www.aucklandcouncil.govt.nz/parks-recreation/stay-at-park/Pages/accommodation-details.aspx?itemID=38"
+                              target="_blank">VISIT NOW</a></p>
+                    <h4 class="display=5"><strong>WHY TOP 5?</strong> </h4>
+                    <!--JQuery: make display hide-->
+                    <button id="btn5" class="btn btn-outline-success">Read more</button>
+                    <p id="text5" style="display: none;">
+                         Upper Mangatāwhiri Campground is located just a 10-minute drive from a dam, offering campers
+                         the
+                         chance to experience the beauty of nature
+                         and the awe-inspiring sight of the dam. With its affordable pricing, it’s an excellent option
+                         for budget-conscious campers.
+                         The presence of flush toilets also makes it a suitable choice for those who prioritize hygiene.
+                         However, the road leading
+                         to the campground is a gravel path, and the water available on-site is muddy, so it’s essential
+                         to bring your own drinking water.
+                    </p>
+               </div>
+          </div>
+     </div>
+     </section>
+     <hr>
+     <footer id="myfooter"></footer> <!-- menu.html re-use of repeating code eg footer, headers-use of appropriate elements -->
+
+     <!-- APA reference section -->
+     <div style="background-color: #f1f1f1; font-size: 0.9em; color: #555;  text-align: center;">
+          <p>
+               OpenAI. (2025). Best camping spot illustration with location marker and smiling hiker [AI-generated
+               illustration]. DALL·E.<br>
+               https://chat.openai.com/
+          </p>
+     </div>
+
+     <script>
+          $(document).ready(function () {
+               $("#btn1").click(function () {
+                    $("#text1").slideToggle("slow");
+               });
+               $("#btn2").click(function () {
+                    $("#text2").slideToggle("slow");
+               });
+               $("#btn3").click(function () {
+                    $("#text3").slideToggle("slow");
+               });
+               $("#btn4").click(function () {
+                    $("#text4").slideToggle("slow");
+               });
+               $("#btn5").click(function () {
+                    $("#text5").slideToggle("slow");
+               });
+          });
+     </script>
+     <!-- menu and footer -->
+     <script src="JavaScript/menuScript.js"></script>
+     <script src="JavaScript/footerScript.js"></script>
+</body>
+
+</html>

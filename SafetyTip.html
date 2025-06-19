@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Safety&Tip</title>
+
+    <!--Link to external CSS-->
+    <link rel="stylesheet" href="CSS/SafetyTip.CSS">
+
+    <!--CDN links for Bootstrap5-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <!-- CDN links for Bootstrap JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!--Here is Javascript function code for Camping Quiz-->
+    <script>
+        function checkAnswer1() {
+            let userAnswer = document.getElementById("q1").value;
+            let explanation = "";
+
+            //when answer b is correct
+            if (userAnswer === "b") {
+                explanation = "✅ Correct.";
+            } else if (userAnswer === "a") {
+                explanation = "❌ Wrong.";
+            } else if (userAnswer === "c") {
+                explanation = "❌ Wrong.";
+            } else {
+                //validation check: when user input wrong value
+                explanation = "Please input 'a', 'b' or 'c'.";
+            }
+
+            document.getElementById("result1").innerText = explanation;
+        }
+
+        function checkAnswer2() {
+            let userAnswer = document.getElementById("q2").value;
+            let explanation = "";
+
+            //when answer a is correct
+            if (userAnswer === "a") {
+                explanation = "✅ Correct.";
+            } else if (userAnswer === "b") {
+                explanation = "❌ Wrong.";
+            } else if (userAnswer === "c") {
+                explanation = "❌ Wrong.";
+            } else {
+                //validation check: when user input wrong value
+                explanation = "Please input 'a', 'b' or 'c'.";
+            }
+
+            document.getElementById("result2").innerText = explanation;
+        }
+
+        function checkAnswer3() {
+            let userAnswer = document.getElementById("q3").value;
+            let explanation = "";
+
+            //when answer c is correct
+            if (userAnswer === "c") {
+                explanation = "✅ Correct.";
+            } else if (userAnswer === "b") {
+                explanation = "❌ Wrong.";
+            } else if (userAnswer === "a") {
+                explanation = "❌ Wrong.";
+            } else {
+                //validation check: when user input wrong value
+                explanation = "Please input 'a', 'b' or 'c'.";
+            }
+
+            document.getElementById("result3").innerText = explanation;
+        }
+
+        function checkAnswer4() {
+            let userAnswer = document.getElementById("q4").value;
+            let explanation = "";
+
+            //when answer b is correct
+            if (userAnswer === "b") {
+                explanation = "✅ Correct.";
+            } else if (userAnswer === "a") {
+                explanation = "❌ Wrong.";
+            } else if (userAnswer === "c") {
+                explanation = "❌ Wrong.";
+            } else {
+                //validation check: when user input wrong value
+                explanation = "Please input 'a', 'b' or 'c'.";
+            }
+
+            document.getElementById("result4").innerText = explanation;
+        }
+
+        function checkAnswer5() {
+            let userAnswer = document.getElementById("q5").value;
+            let explanation = "";
+
+            //when answer c is correct
+            if (userAnswer === "c") {
+                explanation = "✅ Correct.";
+            } else if (userAnswer === "b") {
+                explanation = "❌ Wrong.";
+            } else if (userAnswer === "a") {
+                explanation = "❌ Wrong.";
+            } else {
+                //validation check: when user input wrong value
+                explanation = "Please input 'a', 'b' or 'c'.";
+            }
+
+            document.getElementById("result5").innerText = explanation;
+        }
+    </script>
+</head>
+
+<body>
+    <header>
+        <!--Add company logo here with Bootstrap-->
+        <div class="container">
+            <img src="image/logo.JPG" alt="Site Logo" class="img-thumbnail" width="90" height="40">
+            <!-- menu.html re-use of repeating code eg menus, headers-use of appropriate elements -->
+            <nav id="menu"></nav>
+    </header>
+    <hr>
+    <!--main title section-->
+    <section class="main-title">
+        <!--we3School-->
+        <!--Here is where the object-fit property comes in. The object-fit property can take one of the following values:-->
+        <!--cover - The image keeps its aspect ratio and fills the given dimension. The image will be clipped to fit-->
+        <img src="image/ChatGPTSafety.png" alt="Beginner Camper Banner" class="img-fluid rounded"
+            style="max-height: 600px; object-fit: cover; width: 100%;">
+        <h1 class=nature-text>Camping Safety Tips</h1>
+        <div class="sub-title">Are you curious about the essential safety rules for camping?<br>
+            Learn them in a fun way through our interactive quiz and stay safe on your next outdoor adventure!</div>
+    </section>
+    <br>
+    <section>
+        <!--Create Grid by bootstrap to increase responsibility-->
+        <div class="container">
+            <!-- Row 1: DO 1 + DON'T 1 -->
+            <div class="row">
+                <!--medium device: dividing with 2 equal columns //  small device: takes whole row -->
+                <div class="col-sm-12 col-md-6">
+                    <div class="border border-1 p-2">
+                        <div class="text-center"> <!--Make center align for image-->
+                            <img src="image/do1.jpg" alt="Do icon" class="img-fluid"
+                                style="width: 350px; height: 250px;">
+                        </div>
+                        <h5 class=" text-center" style="color: green;"><strong>✅DO</strong></h5>
+                        <h5 class="text-center" style="color: darkgreen;">Use a fire ring or pit and keep water nearby
+                        </h5>
+                        <p class="text-center">Always build your campfire in a designated fire pit or ring, <br>and have
+                            a bucket of water or sand ready.</p>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6">
+                    <div class="border border-1 p-2">
+                        <div class="text-center"> <!--Make center align for image-->
+                            <img src="image/dont1.jpg" alt="Do icon" class="img-fluid"
+                                style="width: 350px; height: 250px;">
+                        </div>
+                        <h5 class=" text-center" style="color: red;"><strong>❌DON'T</strong></h5>
+                        <h5 class="text-center" style="color: darkred;">Leave the fire unattended</h5>
+                        <p class="text-center">Never walk away from an active campfire,<br> even for a short time.</p>
+                    </div>
+                </div>
+            </div>
+            <br><br>
+            <div class="row">
+                <!--medium device: dividing with 2 equal columns //  small device: takes whole row -->
+                <div class="col-sm-12 col-md-6">
+                    <div class="border border-1 p-2">
+                        <div class="text-center"> <!--Make center align for image-->
+                            <img src="image/do2.png" alt="Do icon" class="img-fluid"
+                                style="width: 350px; height: 250px;">
+                        </div>
+                        <h5 class=" text-center" style="color: green;"><strong>✅DO</strong></h5>
+                        <h5 class="text-center" style="color: darkgreen;">Store food in sealed containers</h5>
+                        <p class="text-center">Keep all food and scented items in sealed bins <br>or lockers to avoid
+                            attracting animals.</p>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6">
+                    <div class="border border-1 p-2">
+                        <div class="text-center"> <!--Make center align for image-->
+                            <img src="image/dont2.jpg" alt="Do icon" class="img-fluid"
+                                style="width: 350px; height: 250px;">
+                        </div>
+                        <h5 class=" text-center" style="color: red;"><strong>❌DON'T</strong></h5>
+                        <h5 class="text-center" style="color: darkred;">Feed wildlife or leave scraps behind</h5>
+                        <p class="text-center">Feeding animals is dangerous<br> and leaving food out increases campsite
+                            risk.</p>
+                    </div>
+                </div>
+            </div>
+            <br><br>
+            <div class="row">
+                <!--medium device: dividing with 2 equal columns //  small device: takes whole row -->
+                <div class="col-sm-12 col-md-6">
+                    <div class="border border-1 p-2">
+                        <div class="text-center"> <!--Make center align for image-->
+                            <img src="image/do3.png" alt="Do icon" class="img-fluid"
+                                style="width: 250px; height: 250px;">
+                        </div>
+                        <h5 class=" text-center" style="color: green;"><strong>✅DO</strong></h5>
+                        <h5 class="text-center" style="color: darkgreen;">Follow the 'Leave No Trace' principle</h5>
+                        <p class="text-center">Pack out all trash and leave your site <br>as clean as or cleaner than
+                            you found it.</p>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6">
+                    <div class="border border-1 p-2">
+                        <div class="text-center"> <!--Make center align for image-->
+                            <img src="image/dont3.jpg" alt="Do icon" class="img-fluid"
+                                style="width: 250px; height: 250px;">
+                        </div>
+                        <h5 class=" text-center" style="color: red;"><strong>❌DON'T</strong></h5>
+                        <h5 class="text-center" style="color: darkred;">Leave behind rubbish or food scraps</h5>
+                        <p class="text-center">Leaving a messy campsite harms the environment, <br> attracts wildlife,
+                            and ruins the experience for the next campers.</p>
+                    </div>
+                </div>
+            </div>
+            <br><br>
+    </section>
+    <section>
+        <h2 style="text-align: center;">🏕️ Camping Quiz </h2>
+        <h3 style="color:green; text-align: center;">Learn about a camping safety tip with Quiz</h3>
+        <div>
+            <h3><strong>❓ Question 1.</strong>What is the safest way to manage a campfire?</h3>
+            <p>a. Build it near your tent for warmth</p>
+            <p>b. Use a fire ring and never leave it unattended</p>
+            <p>c. Pour cooking oil to start it faster</p>
+            <label>Input Your Answer Here.. (a, b, c): </label>
+            <input type="text" id="q1">
+            <button onclick="checkAnswer1();" style="background-color: green; color: white;">SUBMIT</button>
+            <p id="result1"></p>
+        </div>
+        <hr>
+        <div>
+            <h3><strong>❓ Question 2. </strong>Why should you store food in sealed containers while camping?</h3>
+            <p>a. To prevent attracting wildlife</p>
+            <p>b. To avoid sharing it</p>
+            <p>c. To save space</p>
+            <label>Input Your Answer Here.. (a, b, c): </label>
+            <input type="text" id="q2">
+            <button onclick="checkAnswer2();" style="background-color: green; color: white;">SUBMIT</button>
+            <p id="result2"></p>
+        </div>
+        <hr>
+        <div>
+            <h3><strong>❓ Question 3. </strong>Which of the following is a good camping habit?</h3>
+            <p>a. Leave leftover food in the bush</p>
+            <p>b. Burn your plastic trash</p>
+            <p>c. Take all your rubbish with you</p>
+            <label>Input Your Answer Here.. (a, b, c): </label>
+            <input type="text" id="q3">
+            <button onclick="checkAnswer3();" style="background-color: green; color: white;">SUBMIT</button>
+            <p id="result3"></p>
+        </div>
+        <hr>
+        <div>
+            <h3><strong>❓ Question 4. </strong>Which situation is safest during strong wind?</h3>
+            <p>a. Camping near a slope with trees</p>
+            <p>b. Staying in a low, sheltered spot</p>
+            <p>c. Pitching your tent on an open ridge</p>
+            <label>Input Your Answer Here.. (a, b, c): </label>
+            <input type="text" id="q4">
+            <button onclick="checkAnswer4();" style="background-color: green; color: white;">SUBMIT</button>
+            <p id="result4"></p>
+        </div>
+        <hr>
+        <div>
+            <h3><strong>❓ Question 5. </strong>Which item is essential for nighttime camping safety?</h3>
+            <p>a. A Bluetooth speaker</p>
+            <p>b. A Hammock</p>
+            <p>c. A solar lantern or headlamp</p>
+            <label>Input Your Answer Here.. (a, b, c): </label>
+            <input type="text" id="q5">
+            <button onclick="checkAnswer5();" style="background-color: green; color: white;">SUBMIT</button>
+            <p id="result5"></p>
+        </div>
+    </section>
+    <hr>
+    <footer id="myfooter"></footer>
+    <!-- menu.html re-use of repeating code eg footer, headers-use of appropriate elements -->
+
+    <!-- APA reference section -->
+    <div style="background-color: #f1f1f1; font-size: 0.9em; color: #555;  text-align: center;">
+        <p>
+            Pixabay. (n.d.). Fire hot jobs [Photograph]. Pixabay. https://pixabay.com/photos/fire-hot-jobs-2775219/<br>
+            Clker-Free-Vector-Images. (n.d.). Man throwing trash rubbish cleanup [Illustration]. Pixabay.
+            https://pixabay.com/vectors/man-throwing-trash-rubbish-cleanup-30322/<br>
+            More_Than_Productions. (n.d.). Children birds feed girl cute [Illustration]. Pixabay.
+            https://pixabay.com/illustrations/children-birds-feed-girl-cute-6206858/<br>
+            mohamed_hassan. (n.d.). Jar container bottle contour [Illustration]. Pixabay.
+            https://pixabay.com/illustrations/jar-container-bottle-contour-7714462/<br>
+            Kornelia Laubach. (n.d.). Bin overflowing rubbish garbage [Photograph]. Pixabay.
+            https://pixabay.com/photos/bin-overflowing-rubbish-garbage-4665444/<br>
+            Tamer A Soliman. (n.d.). Close-up of fallen dry leaves heap against fire [Photograph]. iStock.
+            https://www.istockphoto.com/photo/close-up-of-fallen-dry-leaves-heap-against-fire-gm2177919803-597290856<br>
+            OpenAI. (2025). Camping safety tips scene with a cheerful camper and campfire [AI-generated illustration].
+            DALL·E.
+            https://chat.openai.com/
+        </p>
+        </footer>
+        <!-- Menu and footer script -->
+        <script src="JavaScript/menuScript.js"></script>
+        <script src="JavaScript/footerScript.js"></script>
+
+</body>
+
+</html>

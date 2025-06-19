@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Beginner's Camping Guide</title>
+  <link rel="stylesheet" href="CSS/CampingGuide.CSS">
+  <!--CDN links for Bootstrap5-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
+  <!-- CDN links for Bootstrap JavaScript -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+  <header>
+    <!--Add company logo here with Bootstrap-->
+    <div class="container">
+      <img src="image/logo.JPG" alt="Site Logo" class="img-thumbnail" width="90" height="40">
+      <!-- menu.html re-use of repeating code eg menus, headers-use of appropriate elements -->
+      <nav id="menu"></nav>
+  </header>
+  <section class="main-title">
+
+    <div class="container-fluid p-0">
+      <!--we3School-->
+      <!--Here is where the object-fit property comes in. The object-fit property can take one of the following values:-->
+      <!--cover - The image keeps its aspect ratio and fills the given dimension. The image will be clipped to fit-->
+      <img src="image/ChatGPTBeginner.png" alt="Beginner Camper Banner" class="img-fluid"
+        style="max-height: 600px; object-fit: cover; width: 100%;">
+    </div>
+    <h1 class=nature-text>Camping Guide</h1>
+    <div class="sub-title">For beginner campers seeking helpful guidance, please refer to this article.
+      It's designed to enhance your camping knowledge and lead to more enjoyable trips</div>
+  </section>
+  <hr>
+  <section class="check">
+    <h2>Equipment Checklist</h2>
+    <p>Please select your camping type.</p>
+    <div class="btns">
+      <a href="SoloEquipmentList.html"><button>Solo / Couple Camper</button></a>
+      <a href="FamilyEqipmentList.html"><button>Family Camper</button></a>
+    </div>
+  </section>
+  <hr>
+  <section class="guide">
+    <div class="g-title  display-3"><strong>Beginner's Guide</strong></div>
+    <div class="g-container">
+      <div class="g-box">
+        <img class="rounded-circle" src="image/setup.png" alt="setup">
+        <br><br>
+        <h3><strong style="color: green;">1. Must-Do Tasks for Campsite Setup.</strong></h3>
+        <p>a. Spray mosquito repellent as soon as you arrive at the campsite to avoid bites.</p>
+        <p>b. Always check the instructions before setting up your shelter or tent; it will save you time.</p>
+        <p>c. Set up trash bags. You'll generate more waste than you think while setting up, so having bags ready adds
+          convenience.</p>
+      </div>
+      <div class="g-box">
+        <img img class="rounded-circle" src="image/guideSpot.jpg" alt="spot">
+        <br><br>
+        <h3><strong style="color: green;">2. Tips for Finding a Great Campspot</strong></h3>
+        <p>a. Choose a flat spot, avoiding inclines or declines as much as possible. This makes for a more comfortable
+          setup and sleep.</p>
+        <p>b. Choose for a shady spot, ideally surrounded by trees. Trees offer natural protection from the sun and can
+          help block wind.</p>
+        <p>c. Pick a location that's not too far from, nor too close to, restrooms and trash cans. You want convenience
+          without the noise or odors.</p>
+      </div>
+      <div class="g-box">
+        <img img class="rounded-circle" src="image/windy.png" alt="windy">
+        <br><br>
+        <h3><strong style="color: green;">3. Camping in Rain vs. Wind</strong></h3>
+        <p>It's perfectly fine to enjoy camping in the rain, but you should avoid camping on windy days.</p>
+        <p>
+          Wile potentially dampening, can actually be quite cozy for camping.
+          With the right gear—a good waterproof tent, rain fly, and proper waterproof clothing—
+          you can stay dry and comfortable. The sound of rain on your tent can even be quite relaxing,
+          and it often means fewer bugs. You can still enjoy activities like reading, playing games,
+          or simply relaxing inside your shelter.
+        </p>
+      </div>
+    </div>
+  </section>
+  <hr>
+  <footer id="myfooter"></footer>
+  <!-- menu.html re-use of repeating code eg footer, headers-use of appropriate elements -->
+  <!-- APA reference section -->
+  <div style="background-color: #f1f1f1; font-size: 0.9em; color: #555;  text-align: center;">
+    <p>
+      Irenna86. (n.d.). Autumn season camp picnic [Illustration]. Pixabay.
+      https://pixabay.com/illustrations/autumn-season-camp-picnic-5580632/<br>
+      Irenna86. (n.d.). Camping forest winter snowing snow [Illustration]. Pixabay.
+      https://pixabay.com/illustrations/camping-forest-winter-snowing-snow-5887682/<br>
+      Irenna86. (n.d.). Windy umbrella girl wind child [Vector image]. Pixabay.
+      https://pixabay.com/vectors/windy-umbrella-girl-wind-child-5940755/<br>
+      OpenAI. (2025). Beginner camper struggling to set up a tent [AI-generated illustration]. DALL·E.
+      https://chat.openai.com/
+    </p>
+    </footer>
+    <!-- Menu and footer script -->
+    <script src="JavaScript/menuScript.js"></script>
+    <script src="JavaScript/footerScript.js"></script>
+
+</body>
+
+</html>

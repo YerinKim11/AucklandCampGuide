@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solo, Couple's Camping Equipment list</title>
+    <link rel="stylesheet" href="CSS/SoloEquipmentList.CSS">
+    <!--CDN links for Bootstrap5-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
+    <!-- CDN links for Bootstrap JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>>
+    <style>
+        .checklist-item {
+            text-align: center;
+            font-size: large;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <!--Add company logo here with Bootstrap-->
+        <div class="container">
+            <img src="image/logo.JPG" alt="Site Logo" class="img-thumbnail" width="90" height="40">
+            <!-- menu.html re-use of repeating code eg menus, headers-use of appropriate elements -->
+            <nav id="menu"></nav>
+        </div>
+    </header>
+    <hr>
+    <h1 style="color:green; text-align:center; text-decoration: underline;">Solo / Couple Camper Equipment Checklist
+    </h1>
+    <section>
+        <div class="checklist-item">
+            <input type="checkbox" id="tent" name="equipment" value="tent">
+            <label for="tent">Tent (1–2 person)</label>
+        </div>
+
+        <div class="checklist-item">
+            <input type="checkbox" id="sleepingbag" name="equipment" value="sleepingbag">
+            <label for="sleepingbag">Sleeping bag</label>
+        </div>
+
+        <div class="checklist-item">
+            <input type="checkbox" id="mat" name="equipment" value="mat">
+            <label for="mat">Sleeping mat or air mattress</label>
+        </div>
+
+        <div class="checklist-item">
+            <input type="checkbox" id="light" name="equipment" value="light">
+            <label for="light">Headlamp or flashlight</label>
+        </div>
+
+        <div class="checklist-item">
+            <input type="checkbox" id="stove" name="equipment" value="stove">
+            <label for="stove">Cooking stove & gas</label>
+        </div>
+
+        <div class="checklist-item">
+            <input type="checkbox" id="cookware" name="equipment" value="cookware">
+            <label for="cookware">Lightweight cookware</label>
+        </div>
+
+        <div class="checklist-item">
+            <input type="checkbox" id="firstaid" name="equipment" value="firstaid">
+            <label for="firstaid">First aid kit</label>
+        </div>
+
+        <div class="checklist-item">
+            <input type="checkbox" id="water" name="equipment" value="water">
+            <label for="water">Water bottle or hydration pack</label>
+        </div>
+
+        <div class="checklist-item">
+            <input type="checkbox" id="chair" name="equipment" value="chair">
+            <label for="chair">Lightweight foldable chair</label>
+        </div>
+
+        <div class="checklist-item">
+            <input type="checkbox" id="clothing" name="equipment" value="clothing">
+            <label for="clothing">Weather-appropriate clothing</label>
+        </div>
+
+        <div class="checklist-item">
+            <input type="checkbox" id="map" name="equipment" value="map">
+            <label for="map">Map / GPS device</label>
+        </div>
+
+        <div class="checklist-item">
+            <input type="checkbox" id="powerbank" name="equipment" value="powerbank">
+            <label for="powerbank">Power bank or battery charger</label>
+        </div>
+
+        <div class="checklist-item">
+            <input type="checkbox" id="multiTool" name="equipment" value="multiTool">
+            <label for="multiTool">Multi-tool or pocket knife</label>
+        </div>
+
+        <div class="checklist-item">
+            <input type="checkbox" id="trashBags" name="equipment" value="trashBags">
+            <label for="trashBags">Trash bags (Leave No Trace!)</label>
+        </div>
+
+        <div class="checklist-item">
+            <input type="checkbox" id="sunscreen" name="equipment" value="sunscreen">
+            <label for="sunscreen">Sunscreen and insect repellent</label>
+        </div>
+
+        <div class="checklist-item">
+            <input type="checkbox" id="hikingShoes" name="equipment" value="hikingShoes">
+            <label for="hikingShoes">Hiking shoes or boots</label>
+        </div>
+
+        <div class="checklist-item">
+            <input type="checkbox" id="rainJacket" name="equipment" value="rainJacket">
+            <label for="rainJacket">Rain jacket or poncho</label>
+        </div>
+
+        <div class="checklist-item">
+            <input type="checkbox" id="snacks" name="equipment" value="snacks">
+            <label for="snacks">Snacks and non-perishable food</label>
+        </div>
+
+        <div class="checklist-item">
+            <input type="checkbox" id="lighter" name="equipment" value="lighter">
+            <label for="lighter">Lighter or waterproof matches</label>
+        </div>
+
+        <div class="checklist-item">
+            <input type="checkbox" id="towel" name="equipment" value="towel">
+            <label for="towel">Quick-dry towel</label>
+        </div>
+    </section>
+    <hr>
+    <footer id="myfooter"></footer>
+    <!-- menu.html re-use of repeating code eg footer, headers-use of appropriate elements -->
+</body>
+<!-- Menu and footer script -->
+<script src="JavaScript/menuScript.js"></script>
+<script src="JavaScript/footerScript.js"></script>
+
+</html>
