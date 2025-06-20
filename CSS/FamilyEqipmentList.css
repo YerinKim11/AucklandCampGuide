@@ -1,0 +1,46 @@
+/* Body font and background */
+  body {
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Header styles: logo and menu */
+  header {
+    padding: 15px 30px;
+  }
+  
+  /* Logo image size */
+  .logo img {
+    height: 60px;
+    width: 100px /* Adjust logo size */
+  }
+  
+  /* Navigation bar styles */
+  nav  {
+    justify-content: center;
+    font-weight: bold;
+    font-size:large;
+    display: flex;
+  }
+
+  #nav{
+    display: flex;
+    gap: 30px;
+  }
+
+  
+  /*When mouse on specifix nav bar changes color*/
+  nav a:hover {
+    color: green;
+    border-bottom: 2px solid green;
+  }
+
+
+
+/* Footer section */
+  footer {
+    background-color: #f1f1f1;
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9em;
+    color: #555;
+  }
