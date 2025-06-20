@@ -4,12 +4,16 @@ function ValidateForm() {
     document.getElementById("emailError").innerText = "";
     document.getElementById("messageError").innerText = "";
     document.getElementById("inquiryError").innerText = "";
+    document.getElementById("experienceError").innerText = "";
 
     let name = document.getElementById("name").value;
     let phone = document.getElementById("phone").value;
     let email = document.getElementById("email").value;
     let message = document.getElementById("message").value;
     let inquiry = document.getElementById("inquiry").value;
+    let exp1 = document.getElementById("expBeginner").checked;
+    let exp2 = document.getElementById("expIntermediate").checked;
+    let exp3 = document.getElementById("expExpert").checked;
 
     let valid = true;
 
@@ -49,6 +53,14 @@ function ValidateForm() {
         valid = false;
     } else {
         document.getElementById("inquiry").classList.add("is-valid");
+    }
+
+    //Validation for CampingExperience
+    if (!exp1 && !exp2 && !exp3) {
+        document.getElementById("experienceError").innerText = "Please select your camping experience level.";
+        valid = false;
+    } else {
+        document.getElementById("experienceError").innerText = "";
     }
 
     // Validation for message
